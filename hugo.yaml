@@ -1,0 +1,495 @@
+baseURL: https://ritikarayat.github.io/
+languageCode: en-us
+title: Ritik Karayat | Portfolio
+theme: hugo-profile
+enableEmoji: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+
+# Menus:
+  # main:
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blogs
+    #   weight: 1
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
+    # Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Ritik Karayat | Portfolio"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "R K" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Ritik Karayat"
+    subtitle: "Product Security Engineer"
+    content: "A student who never stopped learning..."
+    image: /images/hero/bitmoji.png
+    bottomImage:
+      enable: true
+    roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "https://docs.google.com/document/d/1wuNao_NU4V3dkdLi82QF7jB29ephLTz67ypgjmgOK5o/edit?usp=sharing"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: "https://github.com/RitiKarayat"
+        - icon: fab fa-linkedin-in
+          url: "https://www.linkedin.com/in/ritik-karayat/"
+      customIcons:
+        - icon: /images/hero/tryhackme.svg
+          url: "https://tryhackme.com/p/RiTK007"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/hero/bitmoji.png"
+    content: |
+      I am a curious individual, driven to uncover the complexities of computer technologies. 
+      Having around 2 years of experience as a Security Engineer, I have explored various domains in Cybersecurity and built my expertise.
+      
+      Here's what I bring to the table:
+      
+      1. Experienced in Web, Mobile, and Network penetration testing.
+      2. Proficient in scripting, developed numerous integrations and automations for vulnerability scanning.
+      3. In-depth understanding of CI/CD pipelines, IaC tools, Containers, protocols such as Oauth 2.0, OIDC and their security measures. 
+      4. Adopted DevSecOps principles and Shift-Left security approach by implementing multiple security scanning tools in Github Actions. 
+      5. Competent in conducting secure reviews of Code, Architecture Designs, Cloud Infrastructre, Firewalls, etc.
+      6. Created and maintained detailed documentations for various projects, tools and processes.
+      6. Adept at vulnerability management and incident response during security incidents.
+      7. Hands-on experience with many cybersecurity systems such as, Crowdstrike, Qualys, Cloudflare to name a few.
+      9. Certified by EC-Council as Certified Ethical Hacker & Secure Code Warrior as Security Champion
+    
+
+    skills:
+      enable: true
+      title: "Technical Skills:"
+      items:
+        - Python
+        - Go
+        - JavaScript
+        - Flask
+        - Node.js
+        - AWS
+        - GCP
+        - Alicloud
+        - Git
+        - Github Actions
+        - Docker
+        - Terraform
+        - Kubernetes
+        - BurpSuite
+        
+
+  # Experience
+  experience:
+    enable: true
+    title: "Work Experience"
+    items:
+      - job: "Product Security Engineer"
+        company: "Deriv"
+        companyUrl: "https://deriv.com"
+        date: "Oct 2022 - June 2024"
+        featuredLink:
+          enable: true
+          name: "Blog"
+          url: "https://tech.deriv.com/cloud-protection-from-dangling-ip-takeovers/"
+        content: |
+          - Found 10+ vulnerabilities while performing white box and black box penetration tests for web and mobile applications.
+          - Found 25+ vulnerabilities while conducting internal network penetration test for the whole Deriv infrastructure,
+            spanning 10+ office locations.
+          - Performed manual and automated reviews of cloud configurations to identify business-critical issues in various cloud providers
+            such as AWS, GCP, and Alibaba Cloud, increasing security posture score from 60% to 95%. 
+          - Secure code reviews of backend services (Perl, Node.js, Go), frontend (React.js), and mobile applications (Flutter).
+          - Developed and maintained in-house solutions for automated vulnerability scans, in addition to the integration of various 
+            open-source tools ranging from secret detection to dangling IP detections.
+          - Leveraging GitHub APIs and webhook events, developed a solution to track SCA dependency alerts in [ClickUp](https://clickup.com/)
+            generated by GitHub’s [dependabot](https://github.com/dependabot) for 8 organizations, leading to enhanced visibility and accountability for applying patches.
+          - Developed a scanner in Python from scratch to perform monitoring of GitHub Actions workflow files across 700+ repositories 
+            to identify and alert for 8+ insecure patterns, such as script injections, excessive use of permissions, sharing of secrets, etc.
+          - Extending [ovh/debian-cis](https://github.com/ovh/debian-cis) project, hardened the configuration of 600+ Debian servers to be CIS compliant.
+          - Performed threat modeling and secure design reviews for 5+ new products, ensuring security at every phase of the SDLC.
+          - Deployed pre-commit hooks to 1300+ laptops to prevent secrets from being committed to source code repositories.
+          - Deployed 
+            [trivy](https://github.com/aquasecurity/trivy), 
+            [gosec](https://github.com/securego/gosec), 
+            [govulncheck](https://github.com/golang/govulncheck-action),
+            and additional tools in the CI pipeline to detect and report security misconfigurations.
+          - Wrote detailed documentation for all these tools including Setup Guides, Remediation Guides, and General Guides.
+          - Triaged security alerts from various sources like 
+            [Github Code Security](https://docs.github.com/en/code-security), 
+            [Datadog CSM](https://www.datadoghq.com/product/cloud-security-management/), 
+            [Qualys VMDR](https://www.qualys.com/apps/vulnerability-management-detection-response/), 
+            [Crowdstrike](https://www.crowdstrike.com/en-us/), 
+            and others and brought down the open issues to under ~5% by interfacing with the responsible teams.
+          - Investigated critical security incidents and performed Incident Response procedures as deemed fit.
+          - Managed Deriv’s [Bug Bounty Program](https://hackerone.com/deriv?type=team) on HackerOne.
+          - Mentored a group of 30+ students in the cybersecurity module as part of Deriv’s graduate program, BeSquare.
+          - Authored a [tech blog](https://tech.deriv.com/cloud-protection-from-dangling-ip-takeovers/) 
+            for the company’s website regarding the “Detection & Prevention of Dangling IP Takeovers”.
+      
+      - job: "Penetration Testing Intern"
+        company: "Virtually Testing Foundation"
+        companyUrl: "https://vt.foundation/"
+        date: "Oct 2021 - Dec 2021"
+        featuredLink:
+          enable: true
+          name: Certificate of Completion
+          url: "https://certificate.givemycertificate.com/c/901fd3e1-3f73-4419-992f-4d319e73be3b"
+        info:
+          enable: false
+          content: I worked as a Penetration Testing Intern for 3 months at VTF.
+        content: |
+          - Acquired extensive knowledge in identifying and mitigating OWASP Top 10 web application vulnerabilities
+            like SQLi, XSS, IDOR, SSRF, CSRF, Open Redirect, CORS etc.
+          - Got hands-on experience by solving 70+ labs using BurpSuite and wrote detailed reports for exploit PoC and mitigations.
+        
+      - job: "Testing & Support Intern"
+        company: "Appectual IT Solutions"
+        comapanyUrl: "https://www.appectual.com/"
+        date: "May 2021 - July 2021"
+        info:
+          enable: false
+          content: I worked as a Testing & Support Intern for 3 months at Appectual.
+        content: |
+          - Manually tested 2 andoird applications against a variety of test cases and made detailed reports
+            of the identified bugs.
+          - Handled content upload using the company's CMS for 2 projects.
+
+      # - job: Computer Networking Intern
+      #   company: "SIES"
+      #   companyUrl: "https://www.siesgst.edu.in/"
+      #   date: "June 2021 - July 2021"
+      #   content: |
+      #     - Designed and configured a Network Infrastructure of a Government Office on Cisco Packet Tracer 
+      #       applying all concepts taught like Vlan , Trunks , ACL etc.
+      #     - Attended sessions led by Industry Experts on Network Security and Configuration and Digital Forensics
+       
+      # - job: Robotics Developer 
+      #   company: "Technical Team"
+      #   companyUrl: "https://www.linkedin.com/company/technical-team-sies-gst/"
+      #   date: "April 2021 - May 2021"
+      #   content: |
+      #     - Conducted various seminars and workshops in the field of robotics and
+      #       helped other students explore arduino and everything related to robotics.
+      #     - Made all the necessary hardware for events like laser tag and RC cars from
+      #       scratch.
+      #     - Built a mascot for the annual college festival which can move around , greet
+      #       with hand gestures and has voice interactivity.
+
+      - job: Data Science & Business Analytics Intern
+        company: "The Sparks Foundation"
+        companyUrl: "https://www.thesparksfoundationsingapore.org"
+        date: "Aug 2020 - April 2022"
+        content: |
+          - Performed Exploratory Data Analysis on the dataset of 'Sample Superstore' and performed Data Visualization 
+            and derived key insights to boost the store's business.
+        
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Science in Cybersecurity"
+        school:
+          name: "Northeastern University | Khoury College of Computer Sciences"
+          url: "https://www.khoury.northeastern.edu/"
+        date: "Sept 2024 - May 2026"
+        # GPA: "3.8 out of 5.0"
+        content: |-
+          Relevant Coursework: *Computer Systems Security*, *Network Security Practices*, *Software Vulnerabilities and Security*
+        
+      - title: "Bachelor of Science in Information Technology"
+        school:
+          name: "Universtiy of Mumbai | SIES Graduate School of Technology"
+          url: "https://www.siesgst.edu.in/"
+        date: "2018 - 2022"
+        GPA: "9.33 out of 10.0"
+        content: |-
+          Relevant Coursework: *Infrastructure Security*, *Enterprise Network Design*, *Cyber Security & Laws*, *Digital Forensics*,
+          *Cloud Computing & Services*, *Cryptography & Network Security*, *Database Management Systems*, *Data Structures & Algorithms*
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Security Champion
+        content: Gained the rank of Security Champion in Secure Code Warrior platform with an accuracy of 90%, across various languages.
+        url: "https://portal.securecodewarrior.com/#/stats/6627607fa216f324aaab1334"
+        image: /images/achievements/scw-logo.jpg
+      - title: Certified Ethical Hacker
+        content: Aced the CEHv11 certification by EC-Council with a score of 124/125. 
+        url: "https://aspen.eccouncil.org/VerifyBadge?type=certification&a=BJLuxHBfnfXoQyif3Uo85HKTKtkdCGPxDrllX6mXsRk="
+        image: /images/achievements/cehv11.webp
+      - title: Advent of Cyber 3
+        content: Completed Advent of Cyber 3 which is an annual event hosted by TryHackMe
+        url: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-92VTJR8BJL.png"
+        image: /images/achievements/THMlogo.jpg
+      - title: Bytecamp Runner Up
+        content: 2nd Runner-up of Bytecamp, Navi Mumbai’s biggest hackathon among 50+ teams on the topic of Deepfake Detection.
+        url: "https://bytecamp.siesgst.ac.in/"
+        image: /images/achievements/achievment.jpg
+      - title: Bugsquash Winner
+        content: Winner of BugSquash, an intra-collegiate hackathon, among 20+ teams on the topic of Face Mask Detection.
+        url: "https://bugsquash.siesgst.ac.in/"
+        image: /images/achievements/achievment.jpg
+
+  # Projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Terraform AWS Playground
+        content: Building a secure AWS infrastructure using Terraform. Work in Progress...
+        image: /images/projects/terraform-aws-playground.avif
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Terraform"
+          - "AWS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RitiKarayat/terraform-aws-playground
+      
+      - title: Web Application Penetration Testing & Patch Development
+        content: |
+          A vulnerable web application and its patched replica.
+          Consists of a portal which offers some basic scanners post authentication and has reporting capabilities.
+        image: /images/projects/converter.jpg
+        badges:
+          - "Web Security"
+          - "Kali Linux"
+          - "Secure Coding"
+          - "Flask"
+        links: 
+          - icon: fab fa-github
+            url: https://github.com/RitiKarayat/Web-App-Pentest-Patch-Dev
+        
+      - title: JApp
+        content: A simple dockerized web app made to demonstrate CRUD functionalities and an authentication layer.
+        image: /images/projects/converter.jpg
+        badges:
+          - "Flask"
+          - "Python"
+          - "Docker"
+          - "Docker Compose"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RitiKarayat/JApp
+
+      - title: E-Stated
+        content: | 
+          A clone of a Real Estate application comprising of usual features. 
+          It also has a prediction feature which uses RidgeCV algorithm to predict house prices.
+          Both website and android app are created.
+        image: /images/projects/profile2.jpg
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Php"
+          - "MySQL"
+          - "Java"
+          - "Android Studio"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RitiKarayat/E-Stated-
+          - icon: fab fa-github
+            url: https://github.com/RitiKarayat/E1_Group-4_E-Stated-Real-Estate-App-
+      
+      - title: Face Mask Detection
+        content: |
+          A Deep learning model capable of accurately detecting whether a person has
+          worn a mask or not for upto 3 persons in a single frame. 
+          Sends an email to the configured email address for alerting purposes.
+        image: /images/projects/converter.jpg
+        badges:
+          - "Python"
+          - "Keras"
+          - "CNN"
+          - "Deep Learning"
+          
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RitiKarayat/Face-Mask-Detection-CNN-
+      
+      - title: Lucy - Voice Assistant
+        content: |
+          A chatbot which can handle small talk, complex Mathematical operations and surf the web.
+          Uses WolframAlpha API and selenium.
+        image: /images/projects/profile2.jpg
+        badges:
+          - "Python"
+          - "Selenium"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RitiKarayat/Lucy---Voice-Assistant
+
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: |
+      I would love to hear from you..!! Whether you have a question or just want to say Hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:ritikkarayat1@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/RitiKarayat/
+      linkedin: https://www.linkedin.com/in/ritik-karayat/
+      # twitter: https://twitter.com
+      instagram: https://www.instagram.com/ritik_karayat07/
+      # facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
