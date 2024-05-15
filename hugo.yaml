@@ -55,7 +55,7 @@ markup:
 
 params:
   title: "Ritik Karayat | Portfolio"
-  description: Text about my cool site
+  description: Personal Portfolio
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
