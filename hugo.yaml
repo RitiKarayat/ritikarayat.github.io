@@ -135,7 +135,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://docs.google.com/document/d/1S26QJM5-VV1ibQ32nxUPhGGdXzwMqyj_GVpeAPanTgI/edit?usp=sharing"
+      url: "https://docs.google.com/document/d/1pJWxqQGL2D2SrAn9yjsnTNEM-mDq1AGO3NhpKvwaBoU/edit?usp=sharing"
       download: false
       newPage: false
     socialLinks:
