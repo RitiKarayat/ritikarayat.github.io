@@ -363,19 +363,6 @@ params:
           - icon: fab fa-github
             url: https://github.com/RitiKarayat/terraform-aws-playground
       
-      - title: Web Application Penetration Testing & Patch Development
-        content: |
-          A vulnerable web application and its patched replica.
-          Consists of a portal which offers some basic scanners post authentication and has reporting capabilities.
-        image: /images/projects/converter.jpg
-        badges:
-          - "Web Security"
-          - "Kali Linux"
-          - "Secure Coding"
-          - "Flask"
-        links: 
-          - icon: fab fa-github
-            url: https://github.com/RitiKarayat/Web-App-Pentest-Patch-Dev
         
       - title: JApp
         content: A simple dockerized web app made to demonstrate CRUD functionalities and an authentication layer.
