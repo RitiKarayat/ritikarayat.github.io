@@ -350,19 +350,6 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Terraform AWS Playground
-        content: Building a secure AWS infrastructure using Terraform. Work in Progress...
-        image: /images/projects/terraform-aws-playground.avif
-        # featured:
-        #   name: Demo
-        #   link: https://hugo-profile.netlify.app
-        badges:
-          - "Terraform"
-          - "AWS"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/RitiKarayat/terraform-aws-playground
-      
         
       - title: JApp
         content: A simple dockerized web app made to demonstrate CRUD functionalities and an authentication layer.
